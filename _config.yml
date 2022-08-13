@@ -26,7 +26,7 @@ title: Samir Thapa                        # the main title
 tagline: Web Developer | Django | FastApi | Python |Linux | Active Learner |   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
+  A weirdo who think everyone is weird except him
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://thapasamir.github.io'
@@ -44,11 +44,11 @@ social:
   email: thapa.qw@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username      # change to your twitter homepage
-    - https://github.com/username       # change to your github homepage
+    - https://twitter.com/potentialpotat2      # change to your twitter homepage
+    - https://github.com/thapasamir       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/samir-thapa-73a9a31b6/
 
 google_site_verification:               # fill in to your verification string
 
