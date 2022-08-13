@@ -21,9 +21,9 @@ timezone: "Asia/Kathmandu"
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy                          # the main title
+title: Samir Thapa [AluMan]                          # the main title
 
-tagline: A text-focused Jekyll theme   # it will display as the sub-title
+tagline: Web Developer | Django | FastApi | Python |Linux | Active Learner |   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
