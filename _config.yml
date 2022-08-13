@@ -21,7 +21,7 @@ timezone: "Asia/Kathmandu"
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Samir Thapa [AluMan]                          # the main title
+title: Samir Thapa                        # the main title
 
 tagline: Web Developer | Django | FastApi | Python |Linux | Active Learner |   # it will display as the sub-title
 
