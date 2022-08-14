@@ -7,7 +7,7 @@ order: 2
 > About Me
 {: .prompt-tip }
 
-<h2 title="hehehe"> Hey 👋, I'm Samir Thapa!</h2>
+<h2 title="hehehe"> Hey 👋, I'm Samir Thapa! <a href="{{ site.url }}/download/cv.pdf">[Download CV]</a></h2>
 
 <a href="https://www.linkedin.com/in/samir-thapa-73a9a31b6/">
   <img align="left" alt="Samir's LinkedIn" width="24px" src="https://img.icons8.com/nolan/96/linkedin.png" />
@@ -70,6 +70,3 @@ Name one hero, who was happy?
 
 ### 👋🏻 Streak Stats
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=thapasamir&theme=algolia" alt="thapasamir"  /></p>
-
-
-<embed src="https://raw.githubusercontent.com/thapasamir/thapasamir.github.io/main/commons/cv.pdf" width="500" height="375">
