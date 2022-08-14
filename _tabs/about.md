@@ -72,4 +72,4 @@ Name one hero, who was happy?
 <p align="center"><img src="https://github-readme-streak-stats.herokuapp.com/?user=thapasamir&theme=algolia" alt="thapasamir"  /></p>
 
 
-<embed src="cv.pdf" width="500" height="375">
+<embed src="https://github.com/thapasamir/thapasamir.github.io/blob/main/commons/cv.pdf" width="500" height="375">
