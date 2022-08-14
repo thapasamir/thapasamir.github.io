@@ -12,7 +12,7 @@ tags: [programming,python,contex manager]
 
 If you don,t know what is context manager the don't worry you will know it clearly after you finish this article
 
-![](https://miro.medium.com/max/480/1*SkOLGqLCykmP6iLo2BUWdQ.gif)
+![help](https://miro.medium.com/max/480/1*SkOLGqLCykmP6iLo2BUWdQ.gif)
 
 The main principle behind writing a context manager is that you’re writing code that’s meant to surround a block of statements as defined by the use of the with a statement. Context managers allow you to allocate and release resources precisely when you want to. The most widely used example of context managers is the  `with`  statement. Suppose you have two related operations which you’d like to execute as a pair, with a block of code in between. Context managers allow you to do specifically that. For example:
 
