@@ -15,14 +15,14 @@ order: 8
   @import url(https://fonts.googleapis.com/css?family=Francois+One);
 
   body {
-    background: #f5f7fa;
+    background: rgb(44, 45, 45);;
     margin: 10px;
     padding: 10px;
   }
 
   blockquote {
     display: block;
-    background: #fff;
+    background: rgb(44, 45, 45);;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
