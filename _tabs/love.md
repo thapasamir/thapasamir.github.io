@@ -1,3 +1,9 @@
+---
+title: Love
+icon: fas fa-info-circle
+order: 8
+---
+
 <style>
   /* 
 // 12 - CSS3 Blockquote Effects Demo
