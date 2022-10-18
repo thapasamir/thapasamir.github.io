@@ -1,7 +1,7 @@
 ---
 title: Contact
 icon: fas fa-info-circle
-order: 6
+order: 5
 ---
 
 <iframe src="https://giphy.com/embed/26FfiRkepJ0e9L6kU" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/heyarnold-hey-arnold-nicksplat-26FfiRkepJ0e9L6kU"></a></p>
