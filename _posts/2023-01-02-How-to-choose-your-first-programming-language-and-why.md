@@ -1,7 +1,7 @@
 ---
 Title: How to choose your first programming language and why ?
 author: samir thapa
-date: 2023-01-02 21:04:00 -0500
+date: 2023-01-02 21:05:00 +0545
 categories: [programming,python,learning,coding]
 tags: [programming,python,learning]
 ---
