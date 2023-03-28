@@ -1,9 +1,9 @@
 ---
 Title: Procrastination Excuses 101: A Look at the Most Ridiculous Excuses People Use to Justify Their Procrastination
 author: samir thapa
-date: 2023-03-28 13:20:00 +0545
+date: 2023-03-28 13:20:00 
 categories: [Discipline,learning]
-tags: [Procrastinating,Discipline,Productivity,Time Management,Self Improvement,python,learning]
+tags: [Procrastinating,Discipline,Productivity,TimeManagement,Self Improvement,python,learning]
 ---
 # Procrastination Excuses 101: A Look at the Most Ridiculous Excuses People Use to Justify Their Procrastination
 
