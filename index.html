@@ -1,4 +1,120 @@
 ---
-layout: home
-# Index page
+layout: default
+title: Backend Engineer
+desk: true
 ---
+<nav class="icons" id="icons" aria-label="Sections">
+  <a class="ico" href="#about" data-win="about"><svg aria-hidden="true"><use href="#i-disk"/></svg><span><b class="l-d">Samir HD</b><b class="l-m">About</b></span></a>
+  <a class="ico" href="#job-a5" data-win="experience"><svg aria-hidden="true"><use href="#i-folder"/></svg><span>Experience</span></a>
+  <a class="ico" href="#skills" data-win="skills"><svg aria-hidden="true"><use href="#i-chip"/></svg><span>Skills</span></a>
+  <a class="ico" href="#writing" data-win="writing"><svg aria-hidden="true"><use href="#i-doc"/></svg><span>Writing</span></a>
+  <a class="ico" href="#contact" data-win="contact"><svg aria-hidden="true"><use href="#i-mail"/></svg><span>Contact</span></a>
+</nav>
+<a class="ico trash-ico" href="#trash" data-win="trash"><svg aria-hidden="true"><use href="#i-trash"/></svg><span>Trash</span></a>
+
+<main class="desktop" id="desktop">
+
+{% capture c %}
+<h1>Samir Thapa</h1>
+<p class="role">Backend engineer · Kathmandu, Nepal</p>
+<p>4+ years building backends for companies in the US and Australia, mostly in Python and Node.js on AWS. I have loved computers and software since I was young and started coding early, which gave me a strong foundation in programming and web development.</p>
+<p>I love solving complex backend problems: lots of data, many customers on one system, several services that have to agree with each other. I spend time understanding the problem first, because that is how I find a better solution.</p>
+<p>I like writing code that is easy to read, and building systems that keep working as they grow. I pick a tool because the problem needs it, not because it is new.</p>
+<p>I use AI coding tools to move faster, but I read and understand everything before it ships. I don't vibe code.</p>
+<p class="status"><span class="led" aria-hidden="true"></span>Right now: backend developer at A5 SYNC, remote for a US company.</p>
+<p class="actions"><a class="btn" href="{{ '/cv/Samir_Thapa_CV.pdf' | relative_url }}" download>Download CV</a> <a class="btn" href="#job-a5" data-win="experience">See experience</a> <a class="btn" href="#contact" data-win="contact">Get in touch</a></p>
+{% endcapture %}
+{% include window.html id="about" title="about.txt" x=40 y=20 w=560 content=c %}
+
+{% capture c %}
+<div class="files-h"><span></span><span>Name</span><span>Dates</span></div>
+<ul class="files">
+  <li><a class="file" href="#job-a5" data-win="job-a5"><svg aria-hidden="true"><use href="#i-doc"/></svg><span>A5 SYNC</span><span class="fk">Feb 2025 – now</span></a></li>
+  <li><a class="file" href="#job-varicon" data-win="job-varicon"><svg aria-hidden="true"><use href="#i-doc"/></svg><span>Varicon</span><span class="fk">Nov 2022 – May 2026</span></a></li>
+  <li><a class="file" href="#education" data-win="education"><svg aria-hidden="true"><use href="#i-doc"/></svg><span>Education</span><span class="fk">BCA</span></a></li>
+</ul>
+{% endcapture %}
+{% include window.html id="experience" class="folder folder-only-desk flush" title="experience/" x=230 y=110 w=420 content=c status="3 items" %}
+
+{% capture c %}
+<h3>Backend Developer, A5 SYNC</h3>
+<p class="when">Feb 2025 – present · US (remote) · full-time</p>
+<p>An eCommerce platform where companies sell products sourced from many vendors. I build its backend.</p>
+<ul>
+  <li>The catalog holds millions of products from several vendors, and every company's data has to stay separate. I built the multi-tenant backend behind listing, quoting, orders and fulfillment.</li>
+  <li>Product data comes from three vendor FTP servers. I wrote the pipelines that fetch it, parse it, check it and sync millions of SKUs, so the catalog stays accurate.</li>
+  <li>Companies can sign up and manage their own catalogs, listings, orders and quotes without our help.</li>
+  <li>The services are written in Node.js and TypeScript. They use PostgreSQL, Redis for caching and RabbitMQ for background events.</li>
+  <li>Search runs on Elasticsearch, so a typo still finds the product. I also built the filters and tuned the ranking.</li>
+  <li>I also integrated a payment gateway, set up a two-way sync with HubSpot, and added product listing to Amazon Seller Central through its API.</li>
+</ul>
+<p class="tech">Node.js, TypeScript, Express, PostgreSQL, Redis, RabbitMQ, Elasticsearch</p>
+{% endcapture %}
+{% include window.html id="job-a5" class="doc" title="A5 SYNC.txt" x=270 y=48 w=620 content=c %}
+
+{% capture c %}
+<h3>Backend Developer, Varicon</h3>
+<p class="when">Nov 2022 – May 2026 · Australia (remote) · part-time</p>
+<p>Software for construction companies: billing, timesheets, payroll and supplier invoices. I worked on the backend part-time for three and a half years.</p>
+<ul>
+  <li>Moved the app from one customer per deployment to multi-tenant. That meant keeping each customer's data separate, adding role-based access, and adding JWT login with two-factor.</li>
+  <li>Built the supplier merge, which changes data in several services and databases at once. It uses the Saga pattern: each step is tracked, and if one fails the earlier steps are undone.</li>
+  <li>Moved billing, timesheets and third-party integrations onto AWS SQS, so each can slow down or fail without taking the main app with it.</li>
+  <li>Set up a primary and replica database with load balancing, so the app stays quick when traffic is high.</li>
+  <li>Built invoice OCR that learns. When a user corrects a supplier match, the correction is stored as an embedding and used to suggest the right supplier next time.</li>
+  <li>Built document search: semantic search over a vector database, image similarity, and LLM summaries and questions over uploaded files. I also built Spotlight, a search box where you describe what you want to do and it finds the feature.</li>
+  <li>Built PDF export for large reports on AWS Lambda. It runs in the background and streams progress to the user over WebSockets. I also added real-time notifications on web (WebSockets) and mobile (Firebase Cloud Messaging).</li>
+  <li>Automated payroll with Python and Pandas. It reads Google Sheets and produces files ready to import into Xero and MYOB. I also integrated MYOB, Xero and EzzyBills OCR for invoices and bills.</li>
+  <li>Set up testing: Selenium with Behave for UI tests, Locust for load tests and Django Silk for query profiling. APIs shipped with automated tests and CI/CD.</li>
+</ul>
+<p class="tech">Python, Django, PostgreSQL, Pandas, AWS (Lambda, SQS), WebSockets, vector databases</p>
+{% endcapture %}
+{% include window.html id="job-varicon" class="doc" title="Varicon.txt" x=310 y=80 w=620 content=c %}
+
+{% capture c %}
+<h3>Bachelor of Computer Application (BCA)</h3>
+<p>Hetauda City College, Tribhuvan University, Nepal.</p>
+{% endcapture %}
+{% include window.html id="education" class="doc" title="Education.txt" x=340 y=170 w=380 content=c %}
+
+{% capture c %}
+<dl class="skills">
+  <dt>Languages</dt><dd>Python, TypeScript, JavaScript, Go, SQL</dd>
+  <dt>Frameworks</dt><dd>Django, FastAPI, Node.js / Express, Pandas</dd>
+  <dt>Data</dt><dd>PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, vector databases</dd>
+  <dt>AWS</dt><dd>Lambda, ECS, EC2, S3, SQS, SNS, RDS, CloudWatch, CloudFront</dd>
+  <dt>Queues, real time</dt><dd>SQS, RabbitMQ, Celery, WebSockets, Firebase Cloud Messaging</dd>
+  <dt>Design</dt><dd>Multi-tenancy, microservices, event-driven design, Saga pattern, DDD, REST</dd>
+  <dt>AI and search</dt><dd>LLMs, embeddings, semantic and multimodal search, NLP</dd>
+  <dt>Tools, testing</dt><dd>Docker, Jenkins, CI/CD, Linux, Pytest, Selenium, Behave, Locust, Django Silk</dd>
+</dl>
+{% endcapture %}
+{% include window.html id="skills" title="skills.md" x=160 y=120 w=540 content=c %}
+
+{% capture c %}
+<div class="files-h"><span></span><span>Name</span><span>Date</span></div>
+<ul class="files">
+  {% for post in site.posts limit:8 %}
+  <li><a class="file" href="{{ post.url | relative_url }}"><svg aria-hidden="true"><use href="#i-doc"/></svg><span>{{ post.title }}</span><span class="fk">{{ post.date | date: "%b %-d, %Y" }}</span></a></li>
+  {% else %}
+  <li class="empty">No posts yet.</li>
+  {% endfor %}
+</ul>
+{% endcapture %}
+{% include window.html id="writing" class="folder flush" title="writing/" x=220 y=150 w=480 content=c status="All posts: /blog/" %}
+
+{% capture c %}
+<p>Email is the easiest way to reach me.</p>
+<p class="mail"><a href="mailto:samirthapa61622845@gmail.com">samirthapa61622845@gmail.com</a></p>
+<p class="when">I'm in Kathmandu (UTC+5:45) and have worked remotely with teams in the US and Australia.</p>
+<p class="actions"><a class="btn" href="{{ '/cv/Samir_Thapa_CV.pdf' | relative_url }}" download>Download CV</a></p>
+{% comment %}TODO: add GitHub and LinkedIn once confirmed.{% endcomment %}
+{% endcapture %}
+{% include window.html id="contact" title="contact.txt" x=110 y=210 w=400 content=c %}
+
+{% capture c %}
+<p>The Trash is empty.</p>
+{% endcapture %}
+{% include window.html id="trash" class="trash-win" title="Trash" x=180 y=230 w=300 content=c %}
+
+</main>

@@ -1,0 +1,6 @@
+<section class="win {{ include.class }}" id="{{ include.id }}" aria-labelledby="{{ include.id }}-t" data-x="{{ include.x }}" data-y="{{ include.y }}" data-w="{{ include.w }}">
+  <header class="tb"><button class="x" type="button" aria-label="Close {{ include.title }}"></button><h2 id="{{ include.id }}-t">{{ include.title }}</h2><button class="z" type="button" aria-label="Zoom {{ include.title }}"></button></header>
+  <div class="body">{{ include.content }}</div>
+  {% if include.status %}<div class="status-bar">{{ include.status }}</div>{% endif %}
+  <span class="grip" aria-hidden="true"></span>
+</section>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Writing
+description: Notes by Samir Thapa on building backends.
+---
+<main class="desktop">
+  <section class="win">
+    <header class="tb"><h2>writing/</h2></header>
+    <div class="body">
+      <p class="back"><a href="{{ '/' | relative_url }}">&larr; Home</a></p>
+      <h1>Writing</h1>
+      {% if site.posts.size > 0 %}
+      <ul class="posts">
+        {% for post in site.posts %}
+        <li>
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <span class="when">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags.size > 0 %} · {{ post.tags | join: ", " }}{% endif %}</span>
+          {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No posts yet.</p>
+      {% endif %}
+      <p class="when"><a href="{{ '/blog/feed.xml' | relative_url }}">Subscribe by feed</a></p>
+    </div>
+  </section>
+</main>
