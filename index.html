@@ -44,6 +44,10 @@ desk: true
   <li>The catalog holds millions of products from several vendors, and every company's data has to stay separate. I built the multi-tenant backend behind listing, quoting, orders and fulfillment.</li>
   <li>Product data comes from three vendor FTP servers. I wrote the pipelines that fetch it, parse it, check it and sync millions of SKUs, so the catalog stays accurate.</li>
   <li>Companies can sign up and manage their own catalogs, listings, orders and quotes without our help.</li>
+  <li>Built an API Builder. Each reseller can create and publish their own data APIs just by configuring them, with no code. Every API checks its results before returning them, so outside users get consistent data.</li>
+  <li>Built a warehouse management system that tracks every item in stock: receiving, putaway, order picking and stock reservations. Inventory and locations can be bulk-imported from Excel.</li>
+  <li>Built subscriptions and recurring billing. A recurring quote turns into a subscription, and each renewal is generated on schedule with no manual work.</li>
+  <li>Built an organization merge that combines duplicate customer accounts and safely moves their quotes, orders, payments and pricing. It runs as a background job and emails the account owners a summary.</li>
   <li>The services are written in Node.js and TypeScript. They use PostgreSQL, Redis for caching and RabbitMQ for background events.</li>
   <li>Search runs on Elasticsearch, so a typo still finds the product. I also built the filters and tuned the ranking.</li>
   <li>I also integrated a payment gateway, set up a two-way sync with HubSpot, and added product listing to Amazon Seller Central through its API.</li>
@@ -106,9 +110,9 @@ desk: true
 {% capture c %}
 <p>Email is the easiest way to reach me.</p>
 <p class="mail"><a href="mailto:samirthapa61622845@gmail.com">samirthapa61622845@gmail.com</a></p>
+<p>GitHub: <a href="https://github.com/thapasamir">github.com/thapasamir</a><br>LinkedIn: <a href="https://www.linkedin.com/in/samir-thapa-73a9a31b6">linkedin.com/in/samir-thapa-73a9a31b6</a></p>
 <p class="when">I'm in Kathmandu (UTC+5:45) and have worked remotely with teams in the US and Australia.</p>
 <p class="actions"><a class="btn" href="{{ '/cv/Samir_Thapa_CV.pdf' | relative_url }}" download>Download CV</a></p>
-{% comment %}TODO: add GitHub and LinkedIn once confirmed.{% endcomment %}
 {% endcapture %}
 {% include window.html id="contact" title="contact.txt" x=110 y=210 w=400 content=c %}
 
